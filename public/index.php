@@ -17,4 +17,4 @@ echo $twig->render('index.html.twig'); //['the' => 'variables', 'go' => 'here'])
 //et je l'ai crée dans le template
 
 
-echo "<h1>Bonjour tout le monde monde</h1>";
+echo "<h2>Bonjour tout le monde</h2>";
