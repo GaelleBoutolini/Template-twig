@@ -1,0 +1,4 @@
+<?php
+$port = isset($argv[0]) ? $argv[1]: 80;
+
+exec("php -S localhost:$port -t public");
