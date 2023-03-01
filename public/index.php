@@ -13,11 +13,11 @@ $twig = new \Twig\Environment($loader, [
 ]);
 
 $faker = new Faker();
-//j'ai récup
+//j'ai récupéré ce code dans la doc.
 
     $users = [];
     //ce tableau vide sera rempli avec les users
-    for($i = 0; $i <20; $i++)
+    for($i = 0; $i <40; $i++)
     //ici, je renseigne le nombre de users que je veux
 {
     $users[$i] = $faker->full_name();
@@ -28,6 +28,16 @@ echo $twig->render('index.html.twig', [
     "title" => "Page Accueil",
     "users" => $users
 ]);
+
+
+
+
+
+
+
+
+
+
 //pour transmettre les données au template, c'est par l'intermédiaire d'un tableau. Avec la boucle for, on peut transmettre autant de données quon veut.
 
 //['the' => 'variables', 'go' => 'here']);
@@ -38,7 +48,7 @@ echo $twig->render('index.html.twig', [
 //et je l'ai crée dans le template
 
 
-echo "<h2>Bonjour tout le monde</h2>";
+// echo "<h2>Bonjour tout le monde</h2>";
 
 
 //1-j'ai tapé cette commande pour installé faker: composer require espero-soft/faker:dev-master

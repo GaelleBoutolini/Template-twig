@@ -5,43 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    h1{
-        color:rgb(0, 55, 255);
-        text-align: center;
-        text-decoration:underline;
-    }
-    h2{
-        color:rgb(0, 55, 255);
-        text-align: center;
-       
-    }
-    body{
-        background: rgb(225, 230, 231);
-    }
-    p{
-        color: black;
-        text-align: center;
-        border: 1px solid rgb(0, 17, 255);
-        width: 300px;
-        margin: 30px auto;
-    }
+    <link rel="stylesheet" href="/-assets/css/style.css">
     
-    ul{
-        
-        text-align: center;
-        border: 1px solid rgb(0, 17, 255);
-        width: 300px;
-        margin: 30px auto;
-        list-style: none;
-    }
-
-    }
-
-</style>
+</head>
 <body>
-          <h1>{{ title}}</h1>
+          <h1>{{ title |upper}}</h1>
+
+{#j'ai ajouté le "filtre upper" qui met en majuscule mon titre ici.#}
+
+
+{#Les filtres twig permettent de personnaliser nos éléments. (pour voir les filtres: filtre twig), sur google.#}
 
         {#on met les doubles accolade lorsqu'il s'agit d'une chainede caractère ou d'un nombre pour l'affichage. Mais, si c'est tableau, il faut parcourir le tableau et c'est la boucle for qu'il faut.#}
 
@@ -53,7 +26,7 @@
         <li>{{ user }}</li>
             {%  endfor %}
     </ul>
-  
 
+    <script src="/-assets/css/js/script.js"></script>
 </body>
 </html>
