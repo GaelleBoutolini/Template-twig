@@ -28,12 +28,32 @@
         margin: 30px auto;
     }
     
+    ul{
+        
+        text-align: center;
+        border: 1px solid rgb(0, 17, 255);
+        width: 300px;
+        margin: 30px auto;
+        list-style: none;
+    }
+
+    }
 
 </style>
 <body>
+          <h1>{{ title}}</h1>
+
+        {#on met les doubles accolade lorsqu'il s'agit d'une chainede caractère ou d'un nombre pour l'affichage. Mais, si c'est tableau, il faut parcourir le tableau et c'est la boucle for qu'il faut.#}
 
     <h1>Template twig</h1>
     <p>Ceci est un début de projet avec le template twig. Le but est d'apprendre à mieux utiliser le template twig qui est un outil indispensable pour nous développeurs</p>
+    <h1>La liste de mes users</h1>
+    <ul>
+        {% for user in users %}
+        <li>{{ user }}</li>
+            {%  endfor %}
+    </ul>
+  
 
 </body>
 </html>

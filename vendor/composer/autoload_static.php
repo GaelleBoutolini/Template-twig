@@ -21,6 +21,10 @@ class ComposerStaticInit197c02f397068df29bee39eb867af4ff
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'E' => 
+        array (
+            'EsperoSoft\\' => 11,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -35,6 +39,10 @@ class ComposerStaticInit197c02f397068df29bee39eb867af4ff
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'EsperoSoft\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/espero-soft/faker/src',
         ),
     );
 

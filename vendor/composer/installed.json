@@ -1,6 +1,59 @@
 {
     "packages": [
         {
+            "name": "espero-soft/faker",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/espero-soft/Faker.git",
+                "reference": "69ccc10ef1de5c1820acaf0c0dbb407c0eeac399"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/espero-soft/Faker/zipball/69ccc10ef1de5c1820acaf0c0dbb407c0eeac399",
+                "reference": "69ccc10ef1de5c1820acaf0c0dbb407c0eeac399",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "time": "2022-10-07T10:35:02+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "EsperoSoft\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Espero-Soft Informatiques",
+                    "email": "contact@espero-soft.com"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "akpoli",
+                "data",
+                "espero",
+                "espero-soft",
+                "faker",
+                "fixtures",
+                "mudey"
+            ],
+            "support": {
+                "issues": "https://github.com/espero-soft/Faker/issues",
+                "source": "https://github.com/espero-soft/Faker/tree/master"
+            },
+            "install-path": "../espero-soft/faker"
+        },
+        {
             "name": "symfony/polyfill-ctype",
             "version": "v1.27.0",
             "version_normalized": "1.27.0.0",
